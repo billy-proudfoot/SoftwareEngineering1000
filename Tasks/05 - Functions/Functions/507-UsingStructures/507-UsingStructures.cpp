@@ -51,6 +51,15 @@ int main()
 }
 
 
+Point addPoint(Point p1,Point p2)
+{
+    int x = p1.x + p2.x;
+    int y = p1.y + p2.y;
+    float f = sqrt(x * x + y * y);
+    return { x, y, f };
+}
+
+
 // Displays a point as an x,y coordinate
 void displayPoint(Point p)
 {
